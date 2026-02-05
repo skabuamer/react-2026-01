@@ -30,7 +30,9 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
 
-      <Card />
+      <Card username="Cardname" index={1} />
+      <Card username="Cardname2" index={2} />
+      <Card username="Cardname3" index={3} />
     </>
   )
 }
