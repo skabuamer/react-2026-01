@@ -29,22 +29,21 @@ CSS INDEX
 15. Event Details Page
 */
 
-
 // main
-@import "main/breakpoints";
-@import "main/global";
+@use "main/breakpoints" as *;
+@use "main/global" as *;
 
 // sections
-@import "sections/header";
-@import "sections/about";
-@import "sections/countdown";
-@import "sections/schedule";
-@import "sections/stats";
-@import "sections/categories";
-@import "sections/feature";
-@import "sections/artists";
-@import "sections/upcoming-events";
-@import "sections/blog";
+@use "sections/header";
+@use "sections/about";
+@use "sections/countdown";
+@use "sections/schedule";
+@use "sections/stats";
+@use "sections/categories";
+@use "sections/feature";
+@use "sections/artists";
+@use "sections/upcoming-events";
+@use "sections/blog";
 
 .et-5-gallery-item {
     &:first-child {
@@ -85,6 +84,6 @@ CSS INDEX
 
 
 // pages
-@import "pages/about";
-@import "pages/events";
-@import "pages/event-details"
+// @import "pages/about";
+// @import "pages/events";
+// @import "pages/event-details"
