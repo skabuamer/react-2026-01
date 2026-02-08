@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+    --et-blue: #1260FE;
+    --et-purple: #550ECA;
+    --et-purple-rgb: 85, 14, 202;
+    --et-pink: #DE0977;
+    --et-pink-rgb: 222, 9, 119;
+    --et-Lpink: #F929BB;
+    --et-gray: #58595B;
+    --et-gray2: #5C707E;
+    --black: #181818;
+    --white: #ffffff;
+    --font-kalam: "Kalam", cursive;
+    --font-kanit: "Kanit", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-lato: "Lato", sans-serif;
+}
+
+@theme {
+    --color-etPurple: var(--et-purple);
+    --color-etBlue: var(--et-blue);
+    --color-etPink: var(--et-pink);
+    --color-etLpink: var(--et-Lpink);
+    --color-etGray: var(--et-gray);
+    --color-etGray2: var(--et-gray2);
+    --color-etBlack: var(--black);
+
+
+    --breakpoint-*: initial;
+}
+
+@layer components {
+    .et-1-container {
+        @apply mx-auto px-[15px];
+        max-width: calc(clamp(1150px, 61.48vw, 1170px) + 30px);
+    }
+}
+
+@custom-variant xxxl (@media screen and (max-width: 1799px));
+@custom-variant xxl (@media screen and (max-width: 1599px));
+@custom-variant xl (@media screen and (max-width: 1399px));
+@custom-variant lg (@media screen and (max-width: 1199px));
+@custom-variant md (@media screen and (max-width: 991px));
+@custom-variant sm (@media screen and (max-width: 767px));
+@custom-variant xs (@media screen and (max-width: 575px));
+@custom-variant xxs (@media screen and (max-width: 479px));
