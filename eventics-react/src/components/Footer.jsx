@@ -106,7 +106,7 @@ const Footer = () => {
                      {footerContactInfos.map((info, idx) => {
                         return (
                            /* <!-- single info --> */
-                           <div className="flex xxs:flex-col items-center xxs:items-start gap-[15px] xxs:gap-[10px]">
+                           <div key={idx} className="flex xxs:flex-col items-center xxs:items-start gap-[15px] xxs:gap-[10px]">
                               {/* <!-- icon --> */}
                               <div className="icon border border-white/15 rounded-full w-[63px] aspect-square shrink-0 flex items-center justify-center">
                                  <div className="w-[40px] aspect-square bg-white rounded-full flex items-center justify-center">
@@ -174,7 +174,7 @@ const Footer = () => {
                            {footerUpcomingEvents[1].events.map((event, idx) => {
                               return (
                                  /* <!-- single upcoming events --> */
-                                 <div className="flex items-center gap-x-[30px] xxs:gap-x-[15px]">
+                                 <div key={idx} className="flex items-center gap-x-[30px] xxs:gap-x-[15px]">
                                     <div className="rounded-[15px] overflow-hidden shrink-0">
                                        <img src={event.image} alt="Event Image" className="w-[80px] aspect-square object-cover" />
                                     </div>
