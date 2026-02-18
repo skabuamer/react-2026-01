@@ -3,6 +3,7 @@ import "./assets/scss/style.scss";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./pages/About";
+import Events from "./pages/Events";
 import Home from "./pages/Home";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
             <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/about" element={<About />} />
+               <Route path="/events" element={<Events />} />
             </Routes>
             <Footer />
          </BrowserRouter>
