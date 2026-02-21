@@ -1,29 +1,10 @@
+import sponsors from "../data/sponsorsData";
+
 const Sponsors = () => {
 	const sponsorsSectionData = {
 		title: "Trusted By Top sponsors",
 		btnLink: "#",
 	};
-
-	const sponsors = [
-		{
-			img: "assets/img/sponsor-1.svg",
-		},
-		{
-			img: "assets/img/sponsor-2.svg",
-		},
-		{
-			img: "assets/img/sponsor-3.svg",
-		},
-		{
-			img: "assets/img/sponsor-4.svg",
-		},
-		{
-			img: "assets/img/sponsor-5.svg",
-		},
-		{
-			img: "assets/img/sponsor-6.svg",
-		},
-	];
 
 	return (
 		<div className="flex items-center md:flex-col gap-x-[42px] gap-y-[25px] border border-[#D9D9D9] rounded-[20px] py-[30px] xxs:py-[20px] px-[34px] xxs:px-[16px] mb-[130px] lg:mb-[80px] md:mb-[60px]">
@@ -39,11 +20,11 @@ const Sponsors = () => {
 
 			{/* <!-- right --> */}
 			<div className="flex flex-wrap items-center justify-between md:justify-center gap-[30px] md:gap-[50px] w-full xxs:*:w-[40%]">
-				{sponsors.map((sponsor, idx) => {
+				{sponsors.slice(0, 6).map((sponsor, idx) => {
 					return (
 						// <!-- single sponsor -->
 						<div key={idx} href="#" className="group contrast-0 hover:contrast-100 transition duration-300">
-							<img src={sponsor.img} alt="Logo" />
+							<img src={sponsor.img} alt="Logo" className="w-[80px]" />
 						</div>
 					);
 				})}

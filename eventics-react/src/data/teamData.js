@@ -7,6 +7,7 @@ export const speakersSectionData = {
 
 const speakers = [
     {
+        id: 1,
         img: "/assets/img/speaker-1.jpg",
         socials: [
             { icon: faFacebookF, link: "#" },
@@ -19,6 +20,7 @@ const speakers = [
         label: "Music speaker",
     },
     {
+        id: 2,
         img: "/assets/img/speaker-2.jpg",
         socials: [
             { icon: faFacebookF, link: "#" },
@@ -31,6 +33,7 @@ const speakers = [
         label: "Nursing Assistant",
     },
     {
+        id: 3,
         img: "/assets/img/speaker-3.jpg",
         socials: [
             { icon: faFacebookF, link: "2#" },
@@ -43,7 +46,8 @@ const speakers = [
         label: "President of Sales",
     },
     {
-        img: "/assets/img/speaker-1.jpg",
+        id: 4,
+        img: "/assets/img/team-member-3.jpg",
         socials: [
             { icon: faFacebookF, link: "#" },
             { icon: faTwitter, link: "#" },
@@ -54,6 +58,32 @@ const speakers = [
         link: "#",
         label: "Music speaker",
     },
+    {
+        id: 5,
+        img: "/assets/img/team-member-1.jpg",
+        socials: [
+            { icon: faFacebookF, link: "#" },
+            { icon: faTwitter, link: "#" },
+            { icon: faInstagram, link: "#" },
+            { icon: faLinkedinIn, link: "#" },
+        ],
+        name: "Shelby Hasan",
+        link: "#",
+        label: "Managing Director",
+    },
+    {
+        id: 6,
+        img: "/assets/img/team-member-2.jpg",
+        socials: [
+            { icon: faFacebookF, link: "#" },
+            { icon: faTwitter, link: "#" },
+            { icon: faInstagram, link: "#" },
+            { icon: faLinkedinIn, link: "#" },
+        ],
+        name: "Mo Salah",
+        link: "#",
+        label: "Presenter",
+    }
 ];
 
 export default speakers;

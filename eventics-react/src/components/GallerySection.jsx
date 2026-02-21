@@ -1,8 +1,8 @@
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import galleryItems from "../data/galleryData";
 
-const Gallery = () => {
+const GallerySection = () => {
 	const gallerySectionData = {
 		subTitle: "Gallery",
 		title: "2020",
@@ -12,37 +12,6 @@ const Gallery = () => {
 			link: "#",
 		},
 	};
-
-	const galleryItems = [
-		{
-			img: "/assets/img/gallery-img-1.jpg",
-			icon: faPlus,
-		},
-		{
-			img: "/assets/img/gallery-img-2.jpg",
-			icon: faPlus,
-		},
-		{
-			img: "/assets/img/gallery-img-3.jpg",
-			icon: faPlus,
-		},
-		{
-			img: "/assets/img/gallery-img-4.jpg",
-			icon: faPlus,
-		},
-		{
-			img: "/assets/img/gallery-img-5.jpg",
-			icon: faPlus,
-		},
-		{
-			img: "/assets/img/gallery-img-6.jpg",
-			icon: faPlus,
-		},
-		{
-			img: "/assets/img/gallery-img-7.jpg",
-			icon: faPlus,
-		},
-	];
 
 	return (
 		<section className="grid grid-cols-4 lg:grid-cols-3 sm:grid-cols-2">
@@ -69,9 +38,8 @@ const Gallery = () => {
 					</div>
 				</React.Fragment>
 			))}
-			;
 		</section>
 	);
 };
 
-export default Gallery;
+export default GallerySection;
