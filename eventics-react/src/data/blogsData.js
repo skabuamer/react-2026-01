@@ -10,6 +10,21 @@ const blogs = [
         category: "Education",
         date: 31,
         month: "Dec",
+        textContent: `
+        <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
+
+        <p class="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.</p>
+
+        <p class="font-light text-[16px] text-etGray mb-[16px]">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.</p>`,
+
+        innerImgs: [
+            { img: "/assets/img/news-details-img-1.jpg" },
+            { img: "/assets/img/news-details-img-2.jpg" }
+        ],
+
+        textContent2: `<p className="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac sodales habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is augue consequat.</p>`,
+
+        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
     },
     {
         id: 2,
@@ -22,6 +37,23 @@ const blogs = [
         category: "Education",
         date: 25,
         month: "May",
+        textContent: `
+        <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
+
+        <p class="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.</p>
+
+        <p class="font-light text-[16px] text-etGray mb-[16px]">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.</p>`,
+
+        innerImgs: [
+            { img: "/assets/img/news-details-img-1.jpg" },
+            { img: "/assets/img/news-details-img-2.jpg" }
+        ],
+
+        textContent2: `<p className="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac sodales habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is augue consequat.</p>`,
+
+        blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
+
+        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
     },
     {
         id: 3,
@@ -34,6 +66,23 @@ const blogs = [
         category: "Education",
         date: 13,
         month: "Aug",
+        textContent: `
+        <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
+
+        <p class="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.</p>
+
+        <p class="font-light text-[16px] text-etGray mb-[16px]">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.</p>`,
+
+        innerImgs: [
+            { img: "/assets/img/news-details-img-1.jpg" },
+            { img: "/assets/img/news-details-img-2.jpg" }
+        ],
+
+        textContent2: `<p className="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac sodales habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is augue consequat.</p>`,
+
+        blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
+
+        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
     },
     {
         id: 4,
@@ -46,6 +95,23 @@ const blogs = [
         category: "Technology",
         date: 13,
         month: "Aug",
+        textContent: `
+        <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
+
+        <p class="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is sodales augue consequat.</p>
+
+        <p class="font-light text-[16px] text-etGray mb-[16px]">Nulla facilisi. Vestibulum tristique sem in eros eleifend imperdiet. Donec quis convallis neque. In id lacus pulvinar lacus, eget vulputate lectus. Ut viverra bibendum lorem, at tempus nibh mattis in. Sed a massa eget lacus consequat auctor.</p>`,
+
+        innerImgs: [
+            { img: "/assets/img/news-details-img-1.jpg" },
+            { img: "/assets/img/news-details-img-2.jpg" }
+        ],
+
+        textContent2: `<p class="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac sodales habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is augue consequat.</p>`,
+
+        blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
+
+        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
     },
 ];
 

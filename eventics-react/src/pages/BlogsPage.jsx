@@ -1,5 +1,6 @@
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import blogs from "../data/blogsData";
 
@@ -57,19 +58,19 @@ const BlogsPage = () => {
 										</div>
 
 										<h3 className="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px]">
-											<a href={`/news/${blog.id}`} className="hover:text-etBlue">
+											<Link to={`/news/${blog.id}`} className="hover:text-etBlue">
 												{blog.title}
-											</a>
+											</Link>
 										</h3>
 
 										<p className="font-light text-[16px] text-etGray mb-[10px]">{blog.descr}</p>
 
-										<a href={`/news/${blog.id}`} className="text-etBlue text-[16px] hover:text-etBlue">
+										<Link to={`/news/${blog.id}`} className="text-etBlue text-[16px] hover:text-etBlue">
 											Read More
 											<span className="pl-[5px]">
 												<FontAwesomeIcon icon={faArrowRightLong} />
 											</span>
-										</a>
+										</Link>
 									</div>
 								</div>
 							))}
