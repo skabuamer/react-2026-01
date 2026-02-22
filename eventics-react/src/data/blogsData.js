@@ -2,7 +2,7 @@ const blogs = [
     {
         id: 1,
         img: "/assets/img/blog-4.jpg",
-        title: "Cupidatat Nonproident, Sunt in Culpa Qui Officia Deserunt",
+        title: "How Technology Is Transforming Event Booking",
         titleLink: "#",
         author: "admin",
         commentCount: "02",
@@ -14,7 +14,7 @@ const blogs = [
     {
         id: 2,
         img: "/assets/img/blog-5.jpg",
-        title: "Cupidatat Nonproident, Sunt in Culpa Qui Officia Deserunt",
+        title: "From Click to Celebration: The Evolution of Event Management",
         titleLink: "#",
         author: "John",
         commentCount: "02",
@@ -26,7 +26,7 @@ const blogs = [
     {
         id: 3,
         img: "/assets/img/blog-6.jpg",
-        title: "Cupidatat Nonproident, Sunt in Culpa Qui Officia Deserunt",
+        title: "Budget-Friendly Event Planning: Smart Booking Strategies",
         titleLink: "#",
         author: "Michelle",
         commentCount: "02",
@@ -38,7 +38,7 @@ const blogs = [
     {
         id: 4,
         img: "/assets/img/blog-7.jpg",
-        title: "Cupidatat Nonproident, Sunt in Culpa Qui Officia Deserunt",
+        title: "New Features That Will Transform the Way You Plan Events",
         titleLink: "#",
         author: "Michelle",
         commentCount: "02",
