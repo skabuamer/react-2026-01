@@ -1,6 +1,6 @@
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useParams } from "react-router-dom";
+import BlogComment from "../components/BlogComment";
 import Breadcrumb from "../components/Breadcrumb";
 import blogs from "../data/blogsData";
 
@@ -16,7 +16,7 @@ const BlogDetails = () => {
 				<div className="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
 					<div className="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
 						{/* <!-- left content --> */}
-						<div className="left grow space-y-[40px] md:space-y-[30px]">
+						<div className="left grow space-y-[40px] md:space-y-[30px] w-[calc(100%-370px)] lg:w-[calc(100%-360px)]">
 							{/* <!-- post --> */}
 							<div>
 								<div className="img overflow-hidden rounded-[8px] mb-[30px] relative">
@@ -104,103 +104,17 @@ const BlogDetails = () => {
 								<div className="flex gap-[28px] items-center">
 									<h6 className="font-medium text-[16px] text-etBlack">Share:</h6>
 									<div className="flex gap-[15px] text-[16px]">
-										<a href="#" className="text-[#757277] hover:text-etBlue">
-											<FontAwesomeIcon icon={faFacebookF} />
-										</a>
-										<a href="#" className="text-[#757277] hover:text-etBlue">
-											<FontAwesomeIcon icon={faTwitter} />
-										</a>
-										<a href="#" className="text-[#757277] hover:text-etBlue">
-											<FontAwesomeIcon icon={faInstagram} />
-										</a>
-										<a href="#" className="text-[#757277] hover:text-etBlue">
-											<FontAwesomeIcon icon={faLinkedinIn} />
-										</a>
+										{blog.shareOptions.map((option, idx) => (
+											<a key={idx} href={option.link} className="text-[#757277] hover:text-etBlue">
+												<FontAwesomeIcon icon={option.icon} />
+											</a>
+										))}
 									</div>
 								</div>
 							</div>
 
 							{/* <!-- comments --> */}
-							<div className="!mt-[60px] xxs:!mt-[30px]">
-								<h5 className="font-medium text-[24px] text-etBlack mb-[32px] xxs:mb-[20px]">02 Comments</h5>
-
-								<div className="all-comments space-y-[40px] xxs:space-y-[25px]">
-									{/* <!-- single comment --> */}
-									<div className="et-event-details-comment flex xxs:flex-col items-start gap-x-[20px] pb-[40px] xxs:pb-[25px] border-b border-[#ECECEC]">
-										<div className="user-img rounded-full overflow-hidden w-[96px] h-[96px] shrink-0">
-											<img src="assets/img/user.jpg" alt="user" className="object-cover w-full h-full" />
-										</div>
-
-										<div className="pt-[17px]">
-											<div className="user-info mb-[19px]">
-												<h5 className="user-name font-medium text-[20px] text-etBlack mb-[9px]">Ralph edwards</h5>
-												<h6 className="font-normal text-[16px] text-etGray">February 10, 2024 at 2:37 pm</h6>
-											</div>
-											<div className="comment">
-												<p className="text-[16px] text-etGray2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.</p>
-											</div>
-
-											<button className="h-[30px] px-[16px] bg-etBlue text-[14px] text-white rounded-[6px] mt-[22px] hover:bg-etBlack">Reply</button>
-										</div>
-									</div>
-
-									{/* <!-- single comment --> */}
-									<div className="et-event-details-comment flex xxs:flex-col items-start gap-x-[20px] pb-[40px] xxs:pb-[25px] border-b border-[#ECECEC]">
-										<div className="user-img rounded-full overflow-hidden w-[96px] h-[96px] shrink-0">
-											<img src="assets/img/speaker-3.jpg" alt="user" className="object-cover w-full h-full" />
-										</div>
-
-										<div className="pt-[17px]">
-											<div className="user-info mb-[19px]">
-												<h5 className="user-name font-medium text-[20px] text-etBlack mb-[9px]">Esther Howard</h5>
-												<h6 className="font-normal text-[16px] text-etGray">February 10, 2024 at 2:37 pm</h6>
-											</div>
-											<div className="comment">
-												<p className="text-[16px] text-etGray2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.</p>
-											</div>
-
-											<button className="h-[30px] px-[16px] bg-etBlue text-[14px] text-white rounded-[6px] mt-[22px] hover:bg-etBlack">Reply</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							{/* <!-- comment form --> */}
-							<div className="!mt-[60px] xxs:!mt-[30px]">
-								<h5 className="font-medium text-[24px] text-etBlack mb-[32px] xxs:mb-[20px]">Leave a Comment</h5>
-
-								<form action="#" className="grid grid-cols-2 xxs:grid-cols-1 gap-[30px]">
-									<div>
-										<label htmlFor="et-comment-form-name" className="block mb-[11px] font-medium text-[16px] text-etBlack">
-											Your Name*
-										</label>
-										<input type="text" name="name" id="et-comment-form-name" placeholder="Your Name" className="h-[60px] xxs:h-[50px] text-[16px] px-[20px] xxs:px-[15px] rounded-[4px] border border-[#E5E5E5] w-full focus:outline-none" />
-									</div>
-
-									<div>
-										<label htmlFor="et-comment-form-email" className="block mb-[11px] font-medium text-[16px] text-etBlack">
-											Your Email*
-										</label>
-										<input type="email" name="email" id="et-comment-form-email" placeholder="Your Email" className="text-[16px] h-[60px] xxs:h-[50px] px-[20px] xxs:px-[15px] rounded-[4px] border border-[#E5E5E5] w-full focus:outline-none" />
-									</div>
-
-									<div className="col-span-2 xxs:col-span-1">
-										<label htmlFor="et-comment-form-message" className="block mb-[11px] font-medium text-[16px] text-etBlack">
-											Your Review*
-										</label>
-										<textarea name="message" id="et-comment-form-message" placeholder="Write Message" className="h-[200px] text-[16px] py-[18px] px-[20px] xxs:px-[15px] rounded-[4px] border border-[#E5E5E5] w-full focus:outline-none"></textarea>
-									</div>
-
-									<div>
-										<button type="submit" className="bg-etBlue h-[55px] px-[24px] rounded-[8px] text-white text-[16px] hover:bg-etBlack">
-											Post Comment{" "}
-											<span className="pl-[5px]">
-												<i className="fa-solid fa-arrow-right-long"></i>
-											</span>
-										</button>
-									</div>
-								</form>
-							</div>
+							<BlogComment comments={blog.comments} />
 						</div>
 
 						{/* <!-- right sidebar --> */}

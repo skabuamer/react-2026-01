@@ -1,3 +1,5 @@
+import { faFacebookF, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
+
 const blogs = [
     {
         id: 1,
@@ -24,7 +26,33 @@ const blogs = [
 
         textContent2: `<p className="font-light text-[16px] text-etGray mb-[16px]">The is ipsum dolor sit amet consectetur adipiscing elit. Fusce eleifend porta arcu In hac sodales habitasse the is platea augue thelorem turpoi dictumst. In lacus libero faucibus at malesuada sagittis placerat eros sed istincidunt augue ac ante rutrum sed the is augue consequat.</p>`,
 
-        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        shareOptions: [
+            { link: "#", icon: faFacebookF },
+            { link: "#", icon: faInstagram },
+            { link: "#", icon: faLinkedin },
+            { link: "#", icon: faYoutube },
+        ],
+        comments: [
+            {
+                author: {
+                    img: '/assets/img/speaker-3.jpg',
+                    name: 'Ralph edwards',
+                    email: "demo@gmail.com",
+                },
+                time: 'February 10, 2024 at 2:37 pm',
+                descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.'
+            },
+            {
+                author: {
+                    img: '/assets/img/speaker-2.jpg',
+                    name: 'Esther Howard',
+                    email: "demo@gmail.com",
+                },
+                time: 'February 10, 2024 at 2:37 pm',
+                descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.'
+            }
+        ]
     },
     {
         id: 2,
@@ -53,7 +81,33 @@ const blogs = [
 
         blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
 
-        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        shareOptions: [
+            { link: "#", icon: faFacebookF },
+            { link: "#", icon: faInstagram },
+            { link: "#", icon: faLinkedin },
+            { link: "#", icon: faYoutube },
+        ],
+        comments: [
+            {
+                author: {
+                    img: '/assets/img/speaker-3.jpg',
+                    name: 'Ralph edwards',
+                    email: "demo@gmail.com",
+                },
+                time: 'February 10, 2024 at 2:37 pm',
+                descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.'
+            },
+            {
+                author: {
+                    img: '/assets/img/speaker-2.jpg',
+                    name: 'Esther Howard',
+                    email: "demo@gmail.com",
+                },
+                time: 'February 10, 2024 at 2:37 pm',
+                descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.'
+            }
+        ]
     },
     {
         id: 3,
@@ -82,7 +136,33 @@ const blogs = [
 
         blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
 
-        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        shareOptions: [
+            { link: "#", icon: faFacebookF },
+            { link: "#", icon: faInstagram },
+            { link: "#", icon: faLinkedin },
+            { link: "#", icon: faYoutube },
+        ],
+        comments: [
+            {
+                author: {
+                    img: '/assets/img/speaker-3.jpg',
+                    name: 'Ralph edwards',
+                    email: "demo@gmail.com",
+                },
+                time: 'February 10, 2024 at 2:37 pm',
+                descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.'
+            },
+            {
+                author: {
+                    img: '/assets/img/speaker-2.jpg',
+                    name: 'Esther Howard',
+                    email: "demo@gmail.com",
+                },
+                time: 'February 10, 2024 at 2:37 pm',
+                descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.'
+            }
+        ]
     },
     {
         id: 4,
@@ -111,7 +191,33 @@ const blogs = [
 
         blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
 
-        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        shareOptions: [
+            { link: "#", icon: faFacebookF },
+            { link: "#", icon: faInstagram },
+            { link: "#", icon: faLinkedin },
+            { link: "#", icon: faYoutube },
+        ],
+        comments: [
+            {
+                author: {
+                    img: '/assets/img/speaker-3.jpg',
+                    name: 'Ralph edwards',
+                    email: "demo@gmail.com",
+                },
+                time: 'February 10, 2024 at 2:37 pm',
+                descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.'
+            },
+            {
+                author: {
+                    img: '/assets/img/speaker-2.jpg',
+                    name: 'Esther Howard',
+                    email: "demo@gmail.com",
+                },
+                time: 'February 10, 2024 at 2:37 pm',
+                descr: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum quaerat nemo eaque delectus ratione maiores expedita pariatur illum facilis at repellendus nesciunt veniam animi, omnis corrupti reiciendis explicabo itaque id.'
+            }
+        ]
     },
 ];
 
