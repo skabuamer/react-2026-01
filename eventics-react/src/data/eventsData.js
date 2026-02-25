@@ -63,7 +63,18 @@ const schedules = [
                     { link: "#", icon: faYoutube },
                 ]
             }
-        ]
+        ],
+        ticket: {
+            timings: [
+                "06:00", "12:00", "15:00", "18:00", "21:00", "24:00"
+            ],
+            levels: [
+                { label: "Regular", price: "12.00" },
+                { label: "Standard", price: "15.00" },
+                { label: "VIP", price: "20.00" },
+            ]
+        },
+        locationMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.3318974837207!2d90.4133514479341!3d23.794983684888223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a494861707%3A0x59ab371b6ff2e0fd!2zR3Vsc2hhbiBTcXVhcmUg4KaX4KeB4Kay4Ka24Ka-4KaoIOCmuOCnjeCmleCmr-CmvOCmvuCmsA!5e0!3m2!1sen!2sbd!4v1710998994716!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[280px] rounded-[30px]"></iframe>`
     },
     {
         id: 2,
@@ -127,7 +138,18 @@ const schedules = [
                     { link: "#", icon: faYoutube },
                 ]
             }
-        ]
+        ],
+        ticket: {
+            timings: [
+                "06:00", "12:00", "15:00", "18:00", "21:00", "24:00"
+            ],
+            levels: [
+                { label: "Regular", price: "12.00" },
+                { label: "Standard", price: "15.00" },
+                { label: "VIP", price: "20.00" },
+            ]
+        },
+        locationMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.3318974837207!2d90.4133514479341!3d23.794983684888223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a494861707%3A0x59ab371b6ff2e0fd!2zR3Vsc2hhbiBTcXVhcmUg4KaX4KeB4Kay4Ka24Ka-4KaoIOCmuOCnjeCmleCmr-CmvOCmvuCmsA!5e0!3m2!1sen!2sbd!4v1710998994716!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[280px] rounded-[30px]"></iframe>`
     },
     {
         id: 3,
@@ -191,7 +213,18 @@ const schedules = [
                     { link: "#", icon: faYoutube },
                 ]
             }
-        ]
+        ],
+        ticket: {
+            timings: [
+                "06:00", "12:00", "15:00", "18:00", "21:00", "24:00"
+            ],
+            levels: [
+                { label: "Regular", price: "12.00" },
+                { label: "Standard", price: "15.00" },
+                { label: "VIP", price: "20.00" },
+            ]
+        },
+        locationMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.3318974837207!2d90.4133514479341!3d23.794983684888223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a494861707%3A0x59ab371b6ff2e0fd!2zR3Vsc2hhbiBTcXVhcmUg4KaX4KeB4Kay4Ka24Ka-4KaoIOCmuOCnjeCmleCmr-CmvOCmvuCmsA!5e0!3m2!1sen!2sbd!4v1710998994716!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[280px] rounded-[30px]"></iframe>`
     },
     {
         id: 4,
@@ -255,7 +288,18 @@ const schedules = [
                     { link: "#", icon: faYoutube },
                 ]
             }
-        ]
+        ],
+        ticket: {
+            timings: [
+                "06:00", "12:00", "15:00", "18:00", "21:00", "24:00"
+            ],
+            levels: [
+                { label: "Regular", price: "12.00" },
+                { label: "Standard", price: "15.00" },
+                { label: "VIP", price: "20.00" },
+            ]
+        },
+        locationMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.3318974837207!2d90.4133514479341!3d23.794983684888223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a494861707%3A0x59ab371b6ff2e0fd!2zR3Vsc2hhbiBTcXVhcmUg4KaX4KeB4Kay4Ka24Ka-4KaoIOCmuOCnjeCmleCmr-CmvOCmvuCmsA!5e0!3m2!1sen!2sbd!4v1710998994716!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[280px] rounded-[30px]"></iframe>`
     },
     {
         id: 5,
@@ -319,7 +363,18 @@ const schedules = [
                     { link: "#", icon: faYoutube },
                 ]
             }
-        ]
+        ],
+        ticket: {
+            timings: [
+                "06:00", "12:00", "15:00", "18:00", "21:00", "24:00"
+            ],
+            levels: [
+                { label: "Regular", price: "12.00" },
+                { label: "Standard", price: "15.00" },
+                { label: "VIP", price: "20.00" },
+            ]
+        },
+        locationMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.3318974837207!2d90.4133514479341!3d23.794983684888223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a494861707%3A0x59ab371b6ff2e0fd!2zR3Vsc2hhbiBTcXVhcmUg4KaX4KeB4Kay4Ka24Ka-4KaoIOCmuOCnjeCmleCmr-CmvOCmvuCmsA!5e0!3m2!1sen!2sbd!4v1710998994716!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[280px] rounded-[30px]"></iframe>`
     },
     {
         id: 6,
@@ -383,7 +438,18 @@ const schedules = [
                     { link: "#", icon: faYoutube },
                 ]
             }
-        ]
+        ],
+        ticket: {
+            timings: [
+                "06:00", "12:00", "15:00", "18:00", "21:00", "24:00"
+            ],
+            levels: [
+                { label: "Regular", price: "12.00" },
+                { label: "Standard", price: "15.00" },
+                { label: "VIP", price: "20.00" },
+            ]
+        },
+        locationMap: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.3318974837207!2d90.4133514479341!3d23.794983684888223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a494861707%3A0x59ab371b6ff2e0fd!2zR3Vsc2hhbiBTcXVhcmUg4KaX4KeB4Kay4Ka24Ka-4KaoIOCmuOCnjeCmleCmr-CmvOCmvuCmsA!5e0!3m2!1sen!2sbd!4v1710998994716!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[280px] rounded-[30px]"></iframe>`
     },
 ];
 

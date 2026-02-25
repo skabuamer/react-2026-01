@@ -2,3 +2,12 @@
     mask: url(/assets/img/slider-mask.svg) no-repeat bottom center;
     mask-size: cover;
 }
+
+.event-map {
+    iframe {
+        // w-full h-[280px] rounded-[30px]
+        width: 100%;
+        height: 280px;
+        border-radius: 30px;
+    }
+}

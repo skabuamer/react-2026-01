@@ -6,17 +6,17 @@ import Stats from "../components/Stats";
 import TestimonialAbout from "../components/TestimonialAbout";
 
 const About = () => {
-   const currentPage = "About Us";
-   return (
-      <>
-         <Breadcrumb currentPage={currentPage} />
-         <AboutSection />
-         <History />
-         <SpeakersAbout />
-         <Stats />
-         <TestimonialAbout />
-      </>
-   );
+	const currentPage = "About Us";
+	return (
+		<>
+			<Breadcrumb currentPage={currentPage} />
+			<AboutSection />
+			<History />
+			<SpeakersAbout />
+			<Stats />
+			<TestimonialAbout />
+		</>
+	);
 };
 
 export default About;

@@ -1,18 +1,32 @@
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
 const Header = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
+	const [isSticky, setIsSticky] = useState(false);
 
 	const toggleMobileMenu = () => {
 		setMobileMenu((prev) => !prev);
 	};
 
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsSticky(window.scrollY > 100);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		// cleanup
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	const headerData = {
-		logo: "assets/img/logo-white.png",
+		logo: "/assets/img/logo-white.png",
 		logoLink: "#",
 		btn: {
 			link: "#",
@@ -77,7 +91,7 @@ const Header = () => {
 		<>
 			<Sidebar mobileMenu={mobileMenu} toggleMobileMenu={toggleMobileMenu} headerData={headerData} navItems={headerNavItems} />
 
-			<header className="et-header to-be-fixed py-[30px] xxs:py-[20px] fixed top-0 w-full px-[155px] xxxl:px-[100px] xxl:px-[40px] xs:px-[20px] z-50">
+			<header className={`et-header to-be-fixed py-[30px] xxs:py-[20px] fixed top-0 w-full px-[155px] xxxl:px-[100px] xxl:px-[40px] xs:px-[20px] z-50 ${isSticky ? "et-sticky" : ""}`}>
 				<div className="flex justify-between items-center">
 					<div className="logo shrink-0">
 						<a href={headerData.logoLink}>

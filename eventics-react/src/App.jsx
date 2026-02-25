@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./assets/scss/style.scss";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import BlogDetails from "./pages/BlogDetails";
 import BlogsPage from "./pages/BlogsPage";
@@ -21,6 +22,7 @@ const App = () => {
 	return (
 		<>
 			<BrowserRouter>
+				<ScrollToTop />
 				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />

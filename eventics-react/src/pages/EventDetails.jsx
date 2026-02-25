@@ -1,10 +1,9 @@
-import { faAngleLeft, faAngleRight, faArrowRight, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useParams } from "react-router-dom";
 import "swiper/css";
-import { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Breadcrumb from "../components/Breadcrumb";
+import EventTicketWidget from "../components/EventTicketWidget";
 import schedules from "../data/eventsData";
 
 const EventDetails = () => {
@@ -64,7 +63,7 @@ const EventDetails = () => {
 
 								{event.artists.map((artist, index) => (
 									// {/* <!-- single artist --> */}
-									<div className="border border-[#d9d9d9] rounded-[12px] p-[30px] lg:p-[20px] flex xs:flex-col gap-x-[25px] gap-y-[10px] mb-[30px]">
+									<div key={index} className="border border-[#d9d9d9] rounded-[12px] p-[30px] lg:p-[20px] flex xs:flex-col gap-x-[25px] gap-y-[10px] mb-[30px]">
 										{/* <!-- img --> */}
 										<div className="rounded-[6px] overflow-hidden shrink-0">
 											<img src={artist.img} alt="Artist Image" className="w-[168px] aspect-square" />
@@ -104,121 +103,10 @@ const EventDetails = () => {
 						{/* <!-- right sidebar --> */}
 						<div className="right max-w-full w-[370px] lg:w-[360px] shrink-0 space-y-[30px]">
 							{/* <!-- ticket widget --> */}
-							<div className="et-event-details-ticket-widgget border border-[#e5e5e5] rounded-[16px] overflow-hidden">
-								{/* <!-- heading --> */}
-								<div className="bg-etBlue p-[16px] xxs:p-[12px]">
-									<h5 className="font-medium text-[20px] text-white text-center">Select Date and Time</h5>
-								</div>
-
-								{/* <!-- body  --> */}
-								<div className="p-[22px] lg:p-[16px]">
-									{/* <!-- time schedule --> */}
-									<div className="flex justify-between items-center mt-[6px] mb-[16px]">
-										<h6 className="font-medium text-[16px] text-[#232323]">Time Schedule</h6>
-
-										<div className="flex gap-[20px] items-center text-[16px]" id="et-event-details-ticket-time-slider-nav">
-											<button className="prev hover:text-etBlue">
-												<i className="fa-solid fa-angle-left"></i>
-												<FontAwesomeIcon icon={faAngleLeft} />
-											</button>
-											<button className="next hover:text-etBlue">
-												{/* <i className="fa-solid fa-angle-right"></i> */}
-												<FontAwesomeIcon icon={faAngleRight} />
-											</button>
-										</div>
-									</div>
-
-									{/* <!-- slider --> */}
-									<Swiper modules={[Navigation]} slideToClickedSlide navigation={{ nextEl: "#et-event-details-ticket-time-slider-nav .next", prevEl: "#et-event-details-ticket-time-slider-nav .prev" }} slidesPerView={4.5} spaceBetween={10} className="et-event-details-ticket-time-slider swiper overflow-visible mb-[24px]">
-										{/* {event.timeSchedule.map((time, index) => ( */}
-										<SwiperSlide className="w-max group">
-											<span className="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-										</SwiperSlide>
-										<SwiperSlide className="w-max group">
-											<span className="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-										</SwiperSlide>
-										<SwiperSlide className="w-max group">
-											<span className="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-										</SwiperSlide>
-										<SwiperSlide className="w-max group">
-											<span className="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-										</SwiperSlide>
-										<SwiperSlide className="w-max group">
-											<span className="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-										</SwiperSlide>
-										<SwiperSlide className="w-max group">
-											<span className="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-										</SwiperSlide>
-										<SwiperSlide className="w-max group">
-											<span className="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-										</SwiperSlide>
-										<SwiperSlide className="w-max group">
-											<span className="border border-[#e5e5e5] rounded-[4px] h-[30px] inline-flex items-center justify-center px-[15px] font-inter font-normal text-[14px] text-[#232323] cursor-pointer group-[.swiper-slide-active]:bg-etBlue group-[.swiper-slide-active]:border-etBlue group-[.swiper-slide-active]:text-white">19:00</span>
-										</SwiperSlide>
-										{/* ))} */}
-									</Swiper>
-
-									{/* <!-- events --> */}
-									<form className="space-y-[10px] mb-[30px]">
-										<div className="radio-container border border-[#d9d9d9] rounded-[6px] px-[16px] py-[7px]">
-											<label for="schedule1" className="flex gap-[15px] relative font-normal text-[14px] text-[#232323]">
-												<span>posuere turpis, eget molestie Nulla at nibh et.</span>
-												<span className="flex items-center">
-													<input type="radio" id="schedule1" name="options" value="schedule1" className="appearance-none" checked />
-													<span className="before:content-normal before:absolute before:w-[16px] before:h-[16px] before:border before:border-etBlue before:rounded-full before:bg-white before:right-0 before:top-[50%] before:-translate-y-[50%] before:-z-[1] after:content-normal after:w-[8px] after:h-[8px] after:bg-etBlue after:rounded-full after:mr-[4px] after:opacity-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 mr-[28px]">15,00 €</span>
-												</span>
-											</label>
-										</div>
-
-										<div className="radio-container border border-[#d9d9d9] rounded-[6px] px-[16px] py-[7px]">
-											<label for="schedule2" className="flex gap-[15px] relative font-normal text-[14px] text-[#232323]">
-												<span>posuere turpis, eget molestie Nulla at nibh et.</span>
-												<span className="flex items-center">
-													<input type="radio" id="schedule2" name="options" value="schedule2" className="appearance-none" />
-													<span className="font-normal text-[14px] text-[#232323] before:content-normal before:absolute before:w-[16px] before:h-[16px] before:border before:border-etBlue before:rounded-full before:bg-white before:right-0 before:top-[50%] before:-translate-y-[50%] before:-z-[1] after:content-normal after:w-[8px] after:h-[8px] after:bg-etBlue after:rounded-full after:mr-[4px] after:opacity-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 mr-[28px]">13,00 €</span>
-												</span>
-											</label>
-										</div>
-
-										<div className="radio-container border border-[#d9d9d9] rounded-[6px] px-[16px] py-[7px]">
-											<label for="schedule3" className="flex gap-[15px] relative font-normal text-[14px] text-[#232323]">
-												<span>posuere turpis, eget molestie Nulla at nibh et.</span>
-												<span className="flex items-center">
-													<input type="radio" id="schedule3" name="options" value="schedule3" className="appearance-none" />
-													<span className="font-normal text-[14px] text-[#232323] before:content-normal before:absolute before:w-[16px] before:h-[16px] before:border before:border-etBlue before:rounded-full before:bg-white before:right-0 before:top-[50%] before:-translate-y-[50%] before:-z-[1] after:content-normal after:w-[8px] after:h-[8px] after:bg-etBlue after:rounded-full after:mr-[4px] after:opacity-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 mr-[28px]">14,00 €</span>
-												</span>
-											</label>
-										</div>
-									</form>
-
-									{/* <!-- ticket quantity --> */}
-									<div className="border-[0.5px] border-[#d9d9d9] px-[80px] xxs:px-[30px] rounded-full mb-[30px]">
-										<div className="flex items-center justify-between gap-[15px] py-[17px]">
-											<button type="button" id="decreaseButton" className="decrease font-extralight text-[35px] bg-etBlue/10 w-[28px] aspect-square rounded-full inline-flex items-center justify-center hover:bg-etBlue hover:text-white">
-												<span className="h-[28px] leading-[22px]">&minus;</span>
-											</button>
-											<span className="text-[16px] font-light">
-												<span id="ticketNumber">1</span> Ticket
-											</span>
-
-											<button type="button" id="increaseButton" className="increase font-extralight text-[35px] bg-etBlue/10 w-[28px] aspect-square rounded-full inline-flex items-center justify-center hover:bg-etBlue hover:text-white">
-												<span className="h-[28px] leading-[22px]"> + </span>
-											</button>
-										</div>
-									</div>
-
-									{/* <!-- button --> */}
-									<button className="bg-etBlue h-[50px] rounded-full px-[15px] flex items-center justify-center gap-x-[10px] w-full text-white text-[15px] hover:bg-[#000D83]">
-										<span>
-											<img src="/assets/img/ticket-icon.svg" alt="ticket icon" />
-										</span>
-										<span>15,00 €-get Tickets Now</span>
-									</button>
-								</div>
-							</div>
+							<EventTicketWidget timings={event.ticket.timings} levels={event.ticket.levels} eventName={event.title.text} />
 
 							{/* <!-- location map --> */}
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1825.3318974837207!2d90.4133514479341!3d23.794983684888223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a494861707%3A0x59ab371b6ff2e0fd!2zR3Vsc2hhbiBTcXVhcmUg4KaX4KeB4Kay4Ka24Ka-4KaoIOCmuOCnjeCmleCmr-CmvOCmvuCmsA!5e0!3m2!1sen!2sbd!4v1710998994716!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="w-full h-[280px] rounded-[30px]"></iframe>
+							<div dangerouslySetInnerHTML={{ __html: event.locationMap }} className="event-map"></div>
 						</div>
 					</div>
 				</div>
