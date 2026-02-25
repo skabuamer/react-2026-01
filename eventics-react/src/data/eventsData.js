@@ -1,3 +1,5 @@
+import { faFacebookF, faLinkedinIn, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+
 const schedules = [
     {
         id: 1,
@@ -40,7 +42,28 @@ const schedules = [
             "/assets/img/event-detailsimg-2.jpg",
             "/assets/img/event-detailsimg-3.jpg"
         ],
-        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        actions: {
+            btnText: "Resgister Yourself",
+            btnLink: "#",
+            callText: "Call Us Now",
+            callNumber: "+208-555-0112"
+        },
+        artistsTitle: "Event Artists",
+        artists: [
+            {
+                img: "/assets/img/artist-4.jpg",
+                name: "Ronald Richards",
+                role: "Speaker",
+                descr: "Pellentesque pretium, mi in viverra faucibus, justo nunc dapibus lacus, sit amet consequat diam nisi eu mi. Integer diam erat, accumsan eget nisl eu, maximus feugiat odio. Proin eleifend.",
+                socials: [
+                    { link: "#", icon: faFacebookF },
+                    { link: "#", icon: faTwitter },
+                    { link: "#", icon: faLinkedinIn },
+                    { link: "#", icon: faYoutube },
+                ]
+            }
+        ]
     },
     {
         id: 2,
@@ -83,7 +106,28 @@ const schedules = [
             "/assets/img/event-detailsimg-2.jpg",
             "/assets/img/event-detailsimg-3.jpg"
         ],
-        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        actions: {
+            btnText: "Resgister Yourself",
+            btnLink: "#",
+            callText: "Call Us Now",
+            callNumber: "+208-555-0112"
+        },
+        artistsTitle: "Event Artists",
+        artists: [
+            {
+                img: "/assets/img/artist-4.jpg",
+                name: "Ronald Richards",
+                role: "Speaker",
+                descr: "Pellentesque pretium, mi in viverra faucibus, justo nunc dapibus lacus, sit amet consequat diam nisi eu mi. Integer diam erat, accumsan eget nisl eu, maximus feugiat odio. Proin eleifend.",
+                socials: [
+                    { link: "#", icon: faFacebookF },
+                    { link: "#", icon: faTwitter },
+                    { link: "#", icon: faLinkedinIn },
+                    { link: "#", icon: faYoutube },
+                ]
+            }
+        ]
     },
     {
         id: 3,
@@ -126,7 +170,28 @@ const schedules = [
             "/assets/img/event-detailsimg-2.jpg",
             "/assets/img/event-detailsimg-3.jpg"
         ],
-        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        actions: {
+            btnText: "Resgister Yourself",
+            btnLink: "#",
+            callText: "Call Us Now",
+            callNumber: "+208-555-0112"
+        },
+        artistsTitle: "Event Artists",
+        artists: [
+            {
+                img: "/assets/img/artist-4.jpg",
+                name: "Ronald Richards",
+                role: "Speaker",
+                descr: "Pellentesque pretium, mi in viverra faucibus, justo nunc dapibus lacus, sit amet consequat diam nisi eu mi. Integer diam erat, accumsan eget nisl eu, maximus feugiat odio. Proin eleifend.",
+                socials: [
+                    { link: "#", icon: faFacebookF },
+                    { link: "#", icon: faTwitter },
+                    { link: "#", icon: faLinkedinIn },
+                    { link: "#", icon: faYoutube },
+                ]
+            }
+        ]
     },
     {
         id: 4,
@@ -169,7 +234,28 @@ const schedules = [
             "/assets/img/event-detailsimg-2.jpg",
             "/assets/img/event-detailsimg-3.jpg"
         ],
-        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        actions: {
+            btnText: "Resgister Yourself",
+            btnLink: "#",
+            callText: "Call Us Now",
+            callNumber: "+208-555-0112"
+        },
+        artistsTitle: "Event Artists",
+        artists: [
+            {
+                img: "/assets/img/artist-4.jpg",
+                name: "Ronald Richards",
+                role: "Speaker",
+                descr: "Pellentesque pretium, mi in viverra faucibus, justo nunc dapibus lacus, sit amet consequat diam nisi eu mi. Integer diam erat, accumsan eget nisl eu, maximus feugiat odio. Proin eleifend.",
+                socials: [
+                    { link: "#", icon: faFacebookF },
+                    { link: "#", icon: faTwitter },
+                    { link: "#", icon: faLinkedinIn },
+                    { link: "#", icon: faYoutube },
+                ]
+            }
+        ]
     },
     {
         id: 5,
@@ -212,7 +298,28 @@ const schedules = [
             "/assets/img/event-detailsimg-2.jpg",
             "/assets/img/event-detailsimg-3.jpg"
         ],
-        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        actions: {
+            btnText: "Resgister Yourself",
+            btnLink: "#",
+            callText: "Call Us Now",
+            callNumber: "+208-555-0112"
+        },
+        artistsTitle: "Event Artists",
+        artists: [
+            {
+                img: "/assets/img/artist-4.jpg",
+                name: "Ronald Richards",
+                role: "Speaker",
+                descr: "Pellentesque pretium, mi in viverra faucibus, justo nunc dapibus lacus, sit amet consequat diam nisi eu mi. Integer diam erat, accumsan eget nisl eu, maximus feugiat odio. Proin eleifend.",
+                socials: [
+                    { link: "#", icon: faFacebookF },
+                    { link: "#", icon: faTwitter },
+                    { link: "#", icon: faLinkedinIn },
+                    { link: "#", icon: faYoutube },
+                ]
+            }
+        ]
     },
     {
         id: 6,
@@ -255,7 +362,28 @@ const schedules = [
             "/assets/img/event-detailsimg-2.jpg",
             "/assets/img/event-detailsimg-3.jpg"
         ],
-        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`
+        detailsText2: `<p class="font-light text-[16px] text-etGray mb-[43px]">Consectetur adipisicing elit, sed do eiusmod tempor is incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        actions: {
+            btnText: "Resgister Yourself",
+            btnLink: "#",
+            callText: "Call Us Now",
+            callNumber: "+208-555-0112"
+        },
+        artistsTitle: "Event Artists",
+        artists: [
+            {
+                img: "/assets/img/artist-4.jpg",
+                name: "Ronald Richards",
+                role: "Speaker",
+                descr: "Pellentesque pretium, mi in viverra faucibus, justo nunc dapibus lacus, sit amet consequat diam nisi eu mi. Integer diam erat, accumsan eget nisl eu, maximus feugiat odio. Proin eleifend.",
+                socials: [
+                    { link: "#", icon: faFacebookF },
+                    { link: "#", icon: faTwitter },
+                    { link: "#", icon: faLinkedinIn },
+                    { link: "#", icon: faYoutube },
+                ]
+            }
+        ]
     },
 ];
 

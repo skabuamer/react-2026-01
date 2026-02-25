@@ -116,9 +116,9 @@ const EventCard = () => {
 														</Link>
 														<div className="flex items-center">
 															<div className="flex *:-ml-[20px]">
-																<img src="assets/img/reviewer-1.png" alt="Person" className="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0" />
-																<img src="assets/img/reviewer-2.png" alt="Person" className="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0" />
-																<img src="assets/img/reviewer-3.png" alt="Person" className="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0" />
+																{schedule.artists.map((artist, idx) => {
+																	return <img src={artist.img} alt="Person" className="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0" />;
+																})}
 																<div className="w-[45px] h-[45px] rounded-full border-[3px] border-white first:ml-0 text-white bg-etBlue font-semibold flex items-center justify-center text-[16px]"></div>
 															</div>
 															<span className="font-semibold text-etBlue text-[16px] -ml-[29px]">

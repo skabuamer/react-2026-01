@@ -1,3 +1,5 @@
+@use "../main/breakpoints" as *;
+
 .et-3-blog {
     &:hover {
         .et-blog__img img {
@@ -17,5 +19,30 @@
             z-index: 1;
             background: linear-gradient(0deg, rgba(var(--et-purple-rgb), 0.7) 0%, transparent 100%);
         }
+    }
+}
+
+.et-blog-details-rich-text {
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 21px;
+        // margin-top: 27px;
+        color: var(--black);
+
+        @include xs {
+            font-size: 25px;
+        }
+
+        @include xxs {
+            font-size: 22px;
+        }
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 15px;
+        color: var(--et-gray);
     }
 }

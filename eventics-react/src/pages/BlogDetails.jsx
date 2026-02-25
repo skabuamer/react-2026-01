@@ -57,31 +57,30 @@ const BlogDetails = () => {
 											</span>
 										</div>
 									</div>
+									<div className="et-blog-details-rich-text">
+										<div dangerouslySetInnerHTML={{ __html: blog.textContent }}></div>
 
-									<h3 className="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[21px]">{blog.title}</h3>
+										{/* <!-- img --> */}
+										<div className="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] mt-[32px] mb-[33px]">
+											{blog.innerImgs.map((img, idx) => (
+												<img key={idx} src={img.img} alt="Image" className="rounded-[8px]" />
+											))}
+										</div>
 
-									<div dangerouslySetInnerHTML={{ __html: blog.textContent }}></div>
+										<div dangerouslySetInnerHTML={{ __html: blog.textContent2 }}></div>
 
-									{/* <!-- img --> */}
-									<div className="grid grid-cols-2 xxs:grid-cols-1 gap-[30px] lg:gap-[20px] mt-[32px] mb-[33px]">
-										{blog.innerImgs.map((img, idx) => (
-											<img key={idx} src={img.img} alt="Image" className="rounded-[8px]" />
-										))}
+										<blockquote className="bg-[#EEF2F3] italic rounded-[10px] border-l-4 border-etBlue px-[40px] pr-[120px] py-[30px] mt-[32px] mb-[28px] relative text-[16px] font-light">
+											{blog.blockquote}
+											<span className="icon absolute right-[40px] bottom-[35px]">
+												<svg width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0 15.3691H7.71428L2.57139 25.5539H10.2857L15.4286 15.3691V0.0917969H0V15.3691Z" className="fill-etBlue" />
+													<path d="M20.5703 0.0917969V15.3691H28.2846L23.1417 25.5539H30.856L35.9989 15.3691V0.0917969H20.5703Z" className="fill-etBlue" />
+												</svg>
+											</span>
+										</blockquote>
+
+										<div dangerouslySetInnerHTML={{ __html: blog.textContent3 }}></div>
 									</div>
-
-									<div dangerouslySetInnerHTML={{ __html: blog.textContent2 }}></div>
-
-									<blockquote className="bg-[#EEF2F3] italic rounded-[10px] border-l-4 border-etBlue px-[40px] pr-[120px] py-[30px] mt-[32px] mb-[28px] relative text-[16px] font-light">
-										{blog.blockquote}
-										<span className="icon absolute right-[40px] bottom-[35px]">
-											<svg width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0 15.3691H7.71428L2.57139 25.5539H10.2857L15.4286 15.3691V0.0917969H0V15.3691Z" className="fill-etBlue" />
-												<path d="M20.5703 0.0917969V15.3691H28.2846L23.1417 25.5539H30.856L35.9989 15.3691V0.0917969H20.5703Z" className="fill-etBlue" />
-											</svg>
-										</span>
-									</blockquote>
-
-									<div dangerouslySetInnerHTML={{ __html: blog.textContent3 }}></div>
 								</div>
 							</div>
 
