@@ -9,7 +9,7 @@ const Informations = ({ infos, videoCover, videoLink }) => {
 					// {/* <!-- single contact info --> */}
 					<div key={index} className="flex flex-wrap items-center gap-[20px] pb-[20px] text-white border-b border-white/30 last:border-0 last:pb-0">
 						<span className="icon shrink-0 border border-dashed border-white rounded-full h-[62px] w-[62px] flex items-center justify-center">
-							<img src="assets/img/venue-icon.svg" alt="icon" />
+							<img src={info.icon} alt="icon" />
 						</span>
 
 						<div className="txt">

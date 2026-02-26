@@ -6,6 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import BlogDetails from "./pages/BlogDetails";
 import BlogsPage from "./pages/BlogsPage";
+import ContactPage from "./pages/ContactPage";
 import Error404 from "./pages/Error404";
 import EventDetails from "./pages/EventDetails";
 import Events from "./pages/Events";
@@ -39,6 +40,7 @@ const App = () => {
 					<Route path="/team/:id" element={<TeamMember />} />
 					<Route path="/news" element={<BlogsPage />} />
 					<Route path="/news/:id" element={<BlogDetails />} />
+					<Route path="/contact" element={<ContactPage />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>
