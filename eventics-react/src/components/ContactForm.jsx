@@ -9,6 +9,7 @@ const ContactForm = () => {
 
 	const handleContactSubmit = (e) => {
 		e.preventDefault();
+		alert("Form submitted successfully!");
 		setName("");
 		setEmail("");
 		setMessage("");

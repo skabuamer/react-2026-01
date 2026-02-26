@@ -12,6 +12,7 @@ const blogs = [
         category: "Education",
         date: 31,
         month: "Dec",
+        year: "2025",
         textContent: `
         <h3 className="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[21px]">Sample Inner Title</h3>
         <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
@@ -68,6 +69,7 @@ const blogs = [
         category: "Education",
         date: 25,
         month: "May",
+        year: "2025",
         textContent: `
         <h3 className="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[21px]">Sample Inner Title</h3>
         <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
@@ -124,6 +126,7 @@ const blogs = [
         category: "Education",
         date: 13,
         month: "Aug",
+        year: "2025",
         textContent: `
         <h3 className="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[21px]">Sample Inner Title</h3>
         <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
@@ -180,6 +183,7 @@ const blogs = [
         category: "Technology",
         date: 13,
         month: "Aug",
+        year: "2025",
         textContent: `
         <h3 className="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[21px]">Sample Inner Title</h3>
         <p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>
