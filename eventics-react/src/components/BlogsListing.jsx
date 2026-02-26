@@ -9,10 +9,20 @@ const BlogsListing = () => {
 	useEffect(() => {
 		setBreadcrumbTitle("Latest Blogs");
 	}, []);
+
+	const displayedBlogs = searchQuery ? blogs.filter((blog) => blog.title.includes(searchQuery)) : blogs;
+
+	//   return (
+	//     <>
+	//       {displayedBlogs.map(blog => (
+	//         <BlogCard key={blog.id} blog={blog} />
+	//       ))}
+	//     </>
+	//   );
 	return (
 		<div className="left grow space-y-[40px] md:space-y-[30px]">
 			{/* <!-- single blog --> */}
-			{blogs.map((blog, idx) => (
+			{displayedBlogs.map((blog, idx) => (
 				<div key={idx} className="border border-[#D9D9D9] rounded-[8px] p-[24px] xxs:p-[18px]">
 					<div className="img overflow-hidden rounded-[8px] mb-[30px] relative">
 						<img src={blog.img} alt="blog-cover" className="w-full" />
