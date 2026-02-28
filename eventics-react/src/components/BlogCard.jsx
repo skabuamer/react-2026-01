@@ -45,14 +45,14 @@ const BlogCard = ({ blog }) => {
 				</div>
 
 				<h3 className="text-[30px] lg:text-[27px] sm:text-[24px] xxs:text-[22px] font-medium text-etBlack mb-[10px]">
-					<Link to={`/news/${blog.id}`} className="hover:text-etBlue">
+					<Link to={`/news/${blog.title}`} className="hover:text-etBlue">
 						{blog.title}
 					</Link>
 				</h3>
 
 				<p className="font-light text-[16px] text-etGray mb-[10px]">{blog.descr}</p>
 
-				<Link to={`/news/${blog.id}`} className="text-etBlue text-[16px] hover:text-etBlue">
+				<Link to={`/news/${blog.title}`} className="text-etBlue text-[16px] hover:text-etBlue">
 					Read More
 					<span className="pl-[5px]">
 						<FontAwesomeIcon icon={faArrowRightLong} />

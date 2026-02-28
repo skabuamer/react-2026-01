@@ -6,13 +6,29 @@ import blogs from "../data/blogsData";
 
 const BlogSidebar = () => {
 	const [search, setSearch] = useState("");
-
-	const filteredBlogs = blogs.filter((blog) => blog.title.toLowerCase().includes(search.toLowerCase()));
+	const [selectedCategory, setSelectedCategory] = useState(null);
+	const filteredBlogs = selectedCategory ? blogs.filter((blog) => blog.category == selectedCategory) : blogs;
 
 	const Navigate = useNavigate();
 	const handleBlogSearch = (e) => {
 		e.preventDefault();
 		Navigate(`/news?search=${search}`);
+	};
+
+	const categories = blogs.reduce((acc, blog) => {
+		acc[blog.category] = (acc[blog.category] || 0) + 1;
+		return acc;
+	}, {});
+
+	const tags = blogs.reduce((acc, blog) => {
+		blog.tags.forEach((tag) => {
+			acc[tag] = (acc[tag] || 0) + 1;
+		});
+		return acc;
+	}, {});
+
+	const handleCategoryClick = (category) => {
+		Navigate(`/news?category=${category}`);
 	};
 
 	return (
@@ -37,38 +53,14 @@ const BlogSidebar = () => {
 					<h4 className="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">Categories</h4>
 
 					<ul className="mt-[30px] text-[16px]">
-						{blogs.map((blog, idx) => (
-							<li key={idx} className="text-etBlack py-[16px] border-b border-t border-[#D9D9D9]">
-								<a href="#" className="flex items-center justify-between hover:text-etBlue">
-									<span>{blog.category}</span>
-									<span>(2)</span>
-								</a>
+						{Object.entries(categories).map(([category, count], idx) => (
+							<li key={idx} className="text-etBlack py-[16px] border-t last:border-b border-[#D9D9D9]">
+								<div onClick={() => handleCategoryClick(category)} className="flex items-center justify-between hover:text-etBlue cursor-pointer">
+									<span>{category}</span>
+									<span>({count})</span>
+								</div>
 							</li>
 						))}
-						<li className="text-etBlack py-[16px] border-b border-[#D9D9D9]">
-							<a href="#" className="flex items-center justify-between hover:text-etBlue">
-								<span>Development</span>
-								<span>(4)</span>
-							</a>
-						</li>
-						<li className="text-etBlack py-[16px] border-b border-[#D9D9D9]">
-							<a href="#" className="flex items-center justify-between hover:text-etBlue">
-								<span>Data Science</span>
-								<span>(3)</span>
-							</a>
-						</li>
-						<li className="text-etBlack py-[16px] border-b border-[#D9D9D9]">
-							<a href="#" className="flex items-center justify-between hover:text-etBlue">
-								<span>Marketing</span>
-								<span>(2)</span>
-							</a>
-						</li>
-						<li className="text-etBlack py-[16px] border-b border-[#D9D9D9]">
-							<a href="#" className="flex items-center justify-between hover:text-etBlue">
-								<span>Finance</span>
-								<span>(5)</span>
-							</a>
-						</li>
 					</ul>
 				</div>
 
@@ -103,7 +95,7 @@ const BlogSidebar = () => {
 									</span>
 
 									<h6 className="font-medium text-[15px] text-etBlack">
-										<Link to={`/news/${blog.id}`} className="hover:text-etBlue line-clamp-2">
+										<Link to={`/news/${blog.title}`} className="hover:text-etBlue line-clamp-2">
 											{blog.title}
 										</Link>
 									</h6>
@@ -118,27 +110,11 @@ const BlogSidebar = () => {
 					<h4 className="font-medium text-[24px] xxs:text-[20px] text-etBlack relative mb-[5px] before:content-normal before:absolute before:left-0 before:-bottom-[5px] before:w-[50px] before:h-[2px] before:bg-etBlue">Tags</h4>
 
 					<div className="flex flex-wrap gap-[10px] mt-[30px]">
-						<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-							Speaker
-						</a>
-						<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-							Business
-						</a>
-						<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-							Venue
-						</a>
-						<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-							Tech
-						</a>
-						<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-							Personal
-						</a>
-						<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-							Digital
-						</a>
-						<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-							Technology
-						</a>
+						{Object.entries(tags).map(([tag], idx) => (
+							<Link key={idx} to={`/news?tag=${tag}`} className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
+								{tag}
+							</Link>
+						))}
 					</div>
 				</div>
 			</div>

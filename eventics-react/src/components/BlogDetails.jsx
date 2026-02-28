@@ -1,18 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
-import { useOutletContext, useParams } from "react-router-dom";
+import { Link, useNavigate, useOutletContext, useParams } from "react-router-dom";
 import blogs from "../data/blogsData";
 import BlogComment from "./BlogComment";
 
 const BlogDetails = () => {
-	const { id } = useParams();
-	const blog = blogs.find((blog) => blog.id == id);
+	const { title } = useParams();
+	const blog = blogs.find((blog) => blog.title == title);
 
 	const { setBreadcrumbTitle } = useOutletContext();
 
 	useEffect(() => {
 		setBreadcrumbTitle(blog.title);
-	}, []);
+	}, [blog]);
+	const Navigate = useNavigate();
+
+	// const handleTagClick = (tag) => {
+	// 	Navigate(`/news?tag=${tag}`);
+	// };
 
 	return (
 		<>
@@ -89,14 +94,13 @@ const BlogDetails = () => {
 				<div className="border-y border-[#d9d9d9] py-[24px] flex items-center justify-between xs:flex-col xs:items-start gap-[20px]">
 					<div className="flex gap-[28px] items-center">
 						{/* <!-- tags  --> */}
-						<h6 className="font-medium text-[16px] text-etBlack">Tags:</h6>
 						<div className="flex flex-wrap gap-[13px]">
-							<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-								Course
-							</a>
-							<a href="#" className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white">
-								Education
-							</a>
+							<h6 className="font-medium text-[16px] text-etBlack">Tags:</h6>
+							{blog.tags.map((tag, idx) => (
+								<Link key={idx} to={`/news?tag=${tag}`} className="border border-[#e5e5e5] text-[14px] text-[#181818] px-[12px] py-[5px] rounded-[4px] hover:bg-etBlue hover:border-etBlue hover:text-white cursor-pointer">
+									{tag}
+								</Link>
+							))}
 						</div>
 					</div>
 

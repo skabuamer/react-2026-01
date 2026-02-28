@@ -7,9 +7,9 @@ const blogs = [
         title: "How Technology Is Transforming Event Booking",
         titleLink: "#",
         author: "admin",
+        category: "Education",
         commentCount: "02",
         descr: "The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta arcu In hac platea habitasse the platea thelorem turpoi dictumst. In lacus libero faucibus.",
-        category: "Education",
         date: 31,
         month: "Dec",
         year: "2025",
@@ -31,6 +31,11 @@ const blogs = [
         blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
 
         textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        tags: [
+            "Speaker",
+            "Tech",
+            "Technology"
+        ],
         shareOptions: [
             { link: "#", icon: faFacebookF },
             { link: "#", icon: faInstagram },
@@ -64,9 +69,9 @@ const blogs = [
         title: "From Click to Celebration: The Evolution of Event Management",
         titleLink: "#",
         author: "John",
+        category: "Education",
         commentCount: "02",
         descr: "The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta arcu In hac platea habitasse the platea thelorem turpoi dictumst. In lacus libero faucibus.",
-        category: "Education",
         date: 25,
         month: "May",
         year: "2025",
@@ -88,6 +93,11 @@ const blogs = [
         blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
 
         textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        tags: [
+            "Speaker",
+            "Venue",
+            "business"
+        ],
         shareOptions: [
             { link: "#", icon: faFacebookF },
             { link: "#", icon: faInstagram },
@@ -121,9 +131,9 @@ const blogs = [
         title: "Budget-Friendly Event Planning: Smart Booking Strategies",
         titleLink: "#",
         author: "Michelle",
+        category: "Education",
         commentCount: "02",
         descr: "The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta arcu In hac platea habitasse the platea thelorem turpoi dictumst. In lacus libero faucibus.",
-        category: "Education",
         date: 13,
         month: "Aug",
         year: "2025",
@@ -145,6 +155,12 @@ const blogs = [
         blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
 
         textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+
+        tags: [
+            "Tech",
+            "Digital"
+        ],
+
         shareOptions: [
             { link: "#", icon: faFacebookF },
             { link: "#", icon: faInstagram },
@@ -178,9 +194,9 @@ const blogs = [
         title: "New Features That Will Transform the Way You Plan Events",
         titleLink: "#",
         author: "Michelle",
+        category: "Technology",
         commentCount: "02",
         descr: "The is ipsum dolor sit amet consectetur adipiscing elit. Fusce is eleifend porta arcu In hac platea habitasse the platea thelorem turpoi dictumst. In lacus libero faucibus.",
-        category: "Technology",
         date: 13,
         month: "Aug",
         year: "2025",
@@ -202,6 +218,10 @@ const blogs = [
         blockquote: `ellentesque sollicitudin congue dolor non aliquam. Morbi volutpat, nisi vel ultricies urnacondimentum, sapien neque lobortis tortor, quis efficitur mi eu metus. Praesent eleifend orci sit amet est vehicula.`,
 
         textContent3: `<p class="font-light text-[16px] text-etGray mb-[16px]">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore of magna aliqua. Ut enim ad minim veniam, made of owl the quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea dolor commodo consequat. Duis aute irure and dolor in reprehenderit.</p>`,
+        tags: [
+            "Personal",
+            "Venue",
+        ],
         shareOptions: [
             { link: "#", icon: faFacebookF },
             { link: "#", icon: faInstagram },

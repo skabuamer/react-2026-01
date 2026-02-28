@@ -26,7 +26,7 @@ const Blogs = () => {
 
 								<div className="et-blog__txt">
 									<h4 className="et-blog__title text-[20px] sm:text-[18px] font-medium mb-[11px]">
-										<a href={`/news/${blog.id}`} className="hover:text-etBlue">
+										<a href={`/news/${blog.title}`} className="hover:text-etBlue">
 											{blog.title}
 										</a>
 									</h4>

@@ -8,17 +8,19 @@ const BlogsPage = () => {
 	const [breadcrumbTitle, setBreadcrumbTitle] = useState("Latest Blogs");
 	const [searchParams] = useSearchParams();
 	const searchQuery = searchParams.get("search");
-
+	const categoryQuery = searchParams.get("category");
+	const tagQuery = searchParams.get("tag");
+	const finalBreadcrumbTitle = searchQuery ? `Search Results for "${searchQuery}"` : categoryQuery ? `Category: ${categoryQuery}` : tagQuery ? `Tag: ${tagQuery}` : breadcrumbTitle;
 	return (
 		<>
-			<Breadcrumb currentPage={breadcrumbTitle} />
+			<Breadcrumb currentPage={finalBreadcrumbTitle} />
 
 			{/* // blogs */}
 			<div className="et-event-details-content py-[130px] lg:py-[80px] md:py-[60px]">
 				<div className="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
 					<div className="flex gap-[30px] lg:gap-[20px] md:flex-col md:items-center">
 						{/* <!-- left content --> */}
-						{searchQuery ? <SearchResult query={searchQuery} /> : <Outlet context={{ setBreadcrumbTitle }} />}
+						{searchQuery || categoryQuery || tagQuery ? <SearchResult searchQuery={searchQuery} categoryQuery={categoryQuery} tagQuery={tagQuery} /> : <Outlet context={{ setBreadcrumbTitle }} />}
 
 						{/* <!-- right sidebar --> */}
 						<BlogSidebar />

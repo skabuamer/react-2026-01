@@ -41,7 +41,7 @@ const App = () => {
 					<Route path="/team/:id" element={<TeamMember />} />
 					<Route path="/news" element={<BlogsPage />}>
 						<Route index element={<BlogsListing />} handle={{ breadcrumb: "Latest Blogs" }} />
-						<Route path=":id" element={<BlogDetails handle={{ breadcrumb: (data) => data?.title || "Blog Details" }} />} />
+						<Route path=":title" element={<BlogDetails handle={{ breadcrumb: (data) => data?.title || "Blog Details" }} />} />
 					</Route>
 					<Route path="/contact" element={<ContactPage />} />
 				</Routes>
