@@ -31,16 +31,16 @@ const ContactPage = () => {
 			<Breadcrumb currentPage={"Contact Us"} />
 
 			{/* <!-- CONTACT SECTION START --> */}
-			<div class="py-[120px] xl:py-[80px] md:py-[60px]">
-				<div class="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
-					<div class="grid grid-cols-2 md:grid-cols-1 gap-[60px] xl:gap-[40px] items-center">
+			<div className="py-[120px] xl:py-[80px] md:py-[60px]">
+				<div className="container mx-auto max-w-[1200px] px-[12px] xl:max-w-full">
+					<div className="grid grid-cols-2 md:grid-cols-1 gap-[60px] xl:gap-[40px] items-center">
 						{/* <!-- left side contact infos --> */}
 						<Informations infos={contactLeftInofs} videoCover={contactPageData.videoCover} videoLink={contactPageData.videoLink} />
 
 						{/* <!-- right side contact form --> */}
 						<div>
-							<h2 class="text-[40px] md:text-[35px] sm:text-[30px] xxs:text-[28px] font-medium text-etBlack mb-[7px]">Ready to Get Started?</h2>
-							<p class="text-etGray font-light text-[16px] mb-[38px]">Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor ultrices,</p>
+							<h2 className="text-[40px] md:text-[35px] sm:text-[30px] xxs:text-[28px] font-medium text-etBlack mb-[7px]">Ready to Get Started?</h2>
+							<p className="text-etGray font-light text-[16px] mb-[38px]">Nullam varius, erat quis iaculis dictum, eros urna varius eros, ut blandit felis odio in turpis. Quisque rhoncus, eros in auctor ultrices,</p>
 
 							<ContactForm />
 						</div>
