@@ -19,24 +19,27 @@ const EventTicketWidget = ({ timings, levels, eventName }) => {
 	}
 
 	function handleTicketSelect(level) {
-		selectedTicket === level
-			? setSelectedTicket("")
-			: setSelectedTicket({
-					label: level.label,
-					price: level.price,
-				});
+		if (selectedTicket.label === level.label) {
+			setSelectedTicket({ label: "", price: 0 });
+		} else {
+			setSelectedTicket({
+				label: level.label,
+				price: level.price,
+			});
+		}
 	}
 
 	function increaseTicket() {
-		setQuantity(quantity + 1);
+		setQuantity((prev) => prev + 1);
 	}
 
 	function decreaseTicket() {
 		if (quantity <= 1) return;
-		setQuantity(quantity - 1);
+		setQuantity((prev) => prev - 1);
 	}
 
-	function handleTicketPurchase() {
+	function handleTicketPurchase(e) {
+		e.preventDefault();
 		setIsModalOpen(true);
 	}
 
@@ -86,10 +89,8 @@ const EventTicketWidget = ({ timings, levels, eventName }) => {
 							<label onClick={() => handleTicketSelect(level)} className="flex gap-[15px] justify-between relative font-normal text-[14px] text-[#232323]">
 								<span>{level.label}</span>
 								<span className="flex items-center">
-									<input type="radio" name="options" value="schedule1" className="appearance-none" />
-									<span className="before:content-normal before:absolute before:w-[16px] before:h-[16px] before:border before:border-etBlue before:rounded-full before:bg-white before:right-0 before:top-[50%] before:-translate-y-[50%] before:-z-[1] after:content-normal after:w-[8px] after:h-[8px] after:bg-etBlue after:rounded-full after:mr-[4px] after:opacity-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 mr-[35px] shrink-0" data-checked={selectedTicket === level ? "checked" : ""}>
-										{level.price} €
-									</span>
+									<input type="radio" name="options" value="schedule1" className="appearance-none" defaultChecked />
+									<span className="before:content-normal before:absolute before:w-[16px] before:h-[16px] before:border before:border-etBlue before:rounded-full before:bg-white before:right-0 before:top-[50%] before:-translate-y-[50%] before:-z-[1] after:content-normal after:w-[8px] after:h-[8px] after:bg-etBlue after:rounded-full after:mr-[4px] after:opacity-0 after:absolute after:top-[50%] after:-translate-y-[50%] after:right-0 mr-[35px] shrink-0">{level.price} €</span>
 								</span>
 							</label>
 						</div>
