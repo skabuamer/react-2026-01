@@ -37,12 +37,13 @@ const Header = () => {
 	const headerNavItems = [
 		{
 			label: "Home",
-			submenu: [
-				{ label: "Home", link: "/" },
-				{ label: "Home 02", link: "/home-2" },
-				{ label: "Home 03", link: "/home-3" },
-				{ label: "Home 04", link: "/home-4" },
-			],
+			link: "/",
+			// submenu: [
+			// { label: "Home", link: "/" },
+			// { label: "Home 02", link: "/home-2" },
+			// { label: "Home 03", link: "/home-3" },
+			// { label: "Home 04", link: "/home-4" },
+			// ],
 		},
 		{
 			label: "About us",
@@ -77,7 +78,7 @@ const Header = () => {
 			label: "News",
 			submenu: [
 				{ label: "All News", link: "/news" },
-				{ label: "News Details", link: "/news/1" },
+				{ label: "News Details", link: "/news/How Technology Is Transforming Event Booking" },
 			],
 		},
 		{

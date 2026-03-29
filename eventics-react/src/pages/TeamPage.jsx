@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import speakers from "../data/teamData";
 
-const Team = () => {
+const TeamPage = () => {
 	return (
 		<>
 			<Breadcrumb currentPage={"Our Team"} />
@@ -52,4 +52,4 @@ const Team = () => {
 	);
 };
 
-export default Team;
+export default TeamPage;

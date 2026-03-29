@@ -5,20 +5,20 @@ import BlogsListing from "./components/BlogsListing";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
-import About from "./pages/About";
+import AboutPage from "./pages/AboutPage";
 import BlogsPage from "./pages/BlogsPage";
 import ContactPage from "./pages/ContactPage";
-import Error404 from "./pages/Error404";
-import EventDetails from "./pages/EventDetails";
-import Events from "./pages/Events";
-import Faq from "./pages/Faq";
-import Gallery from "./pages/Gallery";
-import Home from "./pages/Home";
-import Pricing from "./pages/Pricing";
+import Error404Page from "./pages/Error404Page";
+import EventDetailsPage from "./pages/EventDetailsPage";
+import EventsPage from "./pages/EventsPage";
+import FaqPage from "./pages/FaqPage";
+import GalleryPage from "./pages/GalleryPage";
+import HomePage from "./pages/HomePage";
+import PricingPage from "./pages/PricingPage";
 import SponsorsPage from "./pages/SponsorsPage";
-import Team from "./pages/Team";
-import TeamMember from "./pages/TeamMember";
-import Venue from "./pages/Venue";
+import TeamMemberDetailsPage from "./pages/TeamMemberDetailsPage";
+import TeamPage from "./pages/TeamPage";
+import VenuePage from "./pages/VenuePage";
 
 const App = () => {
 	return (
@@ -27,18 +27,18 @@ const App = () => {
 				<ScrollToTop />
 				<Header />
 				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/events" element={<Events />} />
-					<Route path="/events/:id" element={<EventDetails />} />
-					<Route path="/pricing" element={<Pricing />} />
-					<Route path="/gallery" element={<Gallery />} />
-					<Route path="/faq" element={<Faq />} />
+					<Route path="/" element={<HomePage />} />
+					<Route path="/about" element={<AboutPage />} />
+					<Route path="/events" element={<EventsPage />} />
+					<Route path="/events/:id" element={<EventDetailsPage />} />
+					<Route path="/pricing" element={<PricingPage />} />
+					<Route path="/gallery" element={<GalleryPage />} />
+					<Route path="/faq" element={<FaqPage />} />
 					<Route path="/sponsor" element={<SponsorsPage />} />
-					<Route path="/venue" element={<Venue />} />
-					<Route path="*" element={<Error404 />} />
-					<Route path="/team" element={<Team />} />
-					<Route path="/team/:id" element={<TeamMember />} />
+					<Route path="/venue" element={<VenuePage />} />
+					<Route path="*" element={<Error404Page />} />
+					<Route path="/team" element={<TeamPage />} />
+					<Route path="/team/:id" element={<TeamMemberDetailsPage />} />
 					<Route path="/news" element={<BlogsPage />}>
 						<Route index element={<BlogsListing />} handle={{ breadcrumb: "Latest Blogs" }} />
 						<Route path=":title" element={<BlogDetails handle={{ breadcrumb: (data) => data?.title || "Blog Details" }} />} />

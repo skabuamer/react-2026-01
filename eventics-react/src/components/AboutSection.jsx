@@ -1,7 +1,7 @@
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const AboutSection = () => {
+const AboutSection = ({ variant }) => {
 	const aboutData = {
 		subTitle: "About Eventek",
 		title: "Know More About The Eventek",
@@ -21,7 +21,7 @@ const AboutSection = () => {
 		},
 	};
 	return (
-		<section className="et-about pt-[60px] pb-[130px] xl:pb-[80px] md:pb-[60px] overflow-hidden relative">
+		<section className={`et-about ${variant === "inner" ? "pt-[130px]" : "pt-[60px]"} pb-[130px] xl:pb-[80px] md:pb-[60px] overflow-hidden relative`}>
 			<div className="et-1-container">
 				<div className="flex items-center md:flex-wrap gap-x-[60px] xxl:gap-x-[40px] lg:gap-x-[30px] gap-y-[40px] sm:gap-y-[40px] lg:justify-center">
 					{/* <!-- left --> */}

@@ -5,12 +5,12 @@ import SpeakersAbout from "../components/SpeakersAbout";
 import Stats from "../components/Stats";
 import TestimonialAbout from "../components/TestimonialAbout";
 
-const About = () => {
+const AboutPage = () => {
 	const currentPage = "About Us";
 	return (
 		<>
 			<Breadcrumb currentPage={currentPage} />
-			<AboutSection />
+			<AboutSection variant="inner" />
 			<History />
 			<SpeakersAbout />
 			<Stats />
@@ -19,4 +19,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default AboutPage;

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 
-const Error404 = () => {
+const Error404Page = () => {
 	const error404Data = {
 		img: "assets/img/404-img.png",
 		titleSpan: "Oops!",
@@ -32,4 +32,4 @@ const Error404 = () => {
 	);
 };
 
-export default Error404;
+export default Error404Page;

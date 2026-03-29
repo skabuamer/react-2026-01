@@ -4,7 +4,6 @@ import Countdown from "../components/CountDown";
 import CTA from "../components/CTA";
 import EventTabs from "../components/EventTabs";
 import Features from "../components/Features";
-import Footer from "../components/Footer";
 import GallerySection from "../components/GallerySection";
 import HeroSlider from "../components/HeroSlider";
 import Pricing from "../components/Pricing";
@@ -14,7 +13,7 @@ import Stats from "../components/Stats";
 import Testimonial from "../components/Testimonial";
 import VenueMap from "../components/VenueMap";
 
-const Home = () => {
+const HomePage = () => {
 	return (
 		<>
 			{/* <Header /> */}
@@ -88,10 +87,8 @@ const Home = () => {
 				<Blogs />
 				{/* <!-- BLOG/NEWS SECTION END --> */}
 			</main>
-
-			<Footer />
 		</>
 	);
 };
 
-export default Home;
+export default HomePage;
