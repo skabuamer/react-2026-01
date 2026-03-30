@@ -13,7 +13,7 @@ import Stats from "../components/Stats";
 import Testimonial from "../components/Testimonial";
 import VenueMap from "../components/VenueMap";
 
-const HomePage = () => {
+const Home = () => {
 	return (
 		<>
 			{/* <Header /> */}
@@ -91,4 +91,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default Home;

@@ -1,0 +1,54 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./assets/scss/style.scss";
+import BlogDetails from "./components/BlogDetails";
+import BlogsListing from "./components/BlogsListing";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ScrollToTop from "./components/ScrollToTop";
+import About from "./pages/About";
+import BlogsPage from "./pages/BlogsPage";
+import ContactPage from "./pages/ContactPage";
+import Error404 from "./pages/Error404";
+import EventDetails from "./pages/EventDetails";
+import Events from "./pages/Events";
+import Faq from "./pages/Faq";
+import Gallery from "./pages/Gallery";
+import Home from "./pages/Home";
+import Pricing from "./pages/Pricing";
+import SponsorsPage from "./pages/SponsorsPage";
+import Team from "./pages/Team";
+import TeamMember from "./pages/TeamMember";
+import Venue from "./pages/Venue";
+
+const App = () => {
+	return (
+		<>
+			<BrowserRouter>
+				<ScrollToTop />
+				<Header />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/events" element={<Events />} />
+					<Route path="/events/:id" element={<EventDetails />} />
+					<Route path="/pricing" element={<Pricing />} />
+					<Route path="/gallery" element={<Gallery />} />
+					<Route path="/faq" element={<Faq />} />
+					<Route path="/sponsor" element={<SponsorsPage />} />
+					<Route path="/venue" element={<Venue />} />
+					<Route path="*" element={<Error404 />} />
+					<Route path="/team" element={<Team />} />
+					<Route path="/team/:id" element={<TeamMember />} />
+					<Route path="/news" element={<BlogsPage />}>
+						<Route index element={<BlogsListing />} handle={{ breadcrumb: "Latest Blogs" }} />
+						<Route path=":title" element={<BlogDetails handle={{ breadcrumb: (data) => data?.title || "Blog Details" }} />} />
+					</Route>
+					<Route path="/contact" element={<ContactPage />} />
+				</Routes>
+				<Footer />
+			</BrowserRouter>
+		</>
+	);
+};
+
+export default App;

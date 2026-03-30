@@ -5,7 +5,7 @@ import SpeakersAbout from "../components/SpeakersAbout";
 import Stats from "../components/Stats";
 import TestimonialAbout from "../components/TestimonialAbout";
 
-const AboutPage = () => {
+const About = () => {
 	const currentPage = "About Us";
 	return (
 		<>
@@ -19,4 +19,4 @@ const AboutPage = () => {
 	);
 };
 
-export default AboutPage;
+export default About;

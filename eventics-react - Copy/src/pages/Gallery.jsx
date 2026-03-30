@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Breadcrumb from "../components/Breadcrumb";
 import galleryItems from "../data/galleryData";
 
-const GalleryPage = () => {
+const Gallery = () => {
 	return (
 		<>
 			<Breadcrumb currentPage={"Our Gallery"} />
@@ -61,4 +61,4 @@ const GalleryPage = () => {
 	);
 };
 
-export default GalleryPage;
+export default Gallery;

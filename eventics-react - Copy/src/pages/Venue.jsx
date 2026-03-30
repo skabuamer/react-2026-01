@@ -1,7 +1,7 @@
 import Breadcrumb from "../components/Breadcrumb";
 import Informations from "../components/Informations";
 
-const VenuePage = () => {
+const Venue = () => {
 	const venueData = {
 		videoLink: "https://youtu.be/6KmuL6RcdNA?si=s1RJZZwk6XcqZAwX",
 		videoCover: "/assets/img/venue-video-cover.jpg",
@@ -49,4 +49,4 @@ const VenuePage = () => {
 	);
 };
 
-export default VenuePage;
+export default Venue;

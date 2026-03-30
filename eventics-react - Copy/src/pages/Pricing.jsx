@@ -2,7 +2,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import EventTabs from "../components/EventTabs";
 import PricingPlanInner from "../components/PricingPlanInner";
 
-const PricingPage = () => {
+const Pricing = () => {
 	const pricingBannerData = {
 		title: {
 			first: "Save More",
@@ -43,4 +43,4 @@ const PricingPage = () => {
 	);
 };
 
-export default PricingPage;
+export default Pricing;

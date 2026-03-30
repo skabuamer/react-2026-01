@@ -6,7 +6,7 @@ import Breadcrumb from "../components/Breadcrumb";
 import EventTicketWidget from "../components/EventTicketWidget";
 import schedules from "../data/eventsData";
 
-const EventDetailsPage = () => {
+const EventDetails = () => {
 	const { id } = useParams();
 	const event = schedules.find((event) => event.id == id);
 	return (
@@ -115,4 +115,4 @@ const EventDetailsPage = () => {
 	);
 };
 
-export default EventDetailsPage;
+export default EventDetails;

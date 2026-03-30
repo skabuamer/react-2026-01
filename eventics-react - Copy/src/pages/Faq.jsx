@@ -2,7 +2,7 @@ import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import Breadcrumb from "../components/Breadcrumb";
-const FaqPage = () => {
+const Faq = () => {
 	const [activeFaq, setActiveFaq] = useState({
 		left: 0,
 		right: 1,
@@ -115,4 +115,4 @@ const FaqPage = () => {
 	);
 };
 
-export default FaqPage;
+export default Faq;
